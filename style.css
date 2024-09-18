@@ -1,0 +1,138 @@
+/* Add styles here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex ;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    height: 100vh;
+    
+}
+main{
+    z-index: 10;
+}
+
+.upper{
+    height: 100px;
+    width: 200px;
+    background: rgb(221, 255, 0);
+    border-radius: 100px 100px 0 0;
+    /* transform: rotate(-40deg); */
+    animation-name: upper;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    
+
+}
+
+@keyframes upper{
+    from{
+
+    }
+    to{
+        transform: rotate(-40deg) ;
+    }
+}
+.lower{
+    height: 100px;
+    width: 200px;
+    background: rgb(221, 255, 0);
+    border-radius: 0 0 100px 100px;
+    /* transform: rotate(40deg); */
+    animation-name: lower;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+
+
+
+@keyframes lower{
+    from{
+
+    }
+    to{
+        transform: rotate(40deg) ;
+    }
+}
+
+
+p{
+    font-size: 50px;
+    position:absolute;
+    right: 40px;
+    top: 350px;
+}
+
+.food1{
+    animation-name: fruit1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-delay: s; */
+
+}
+
+@keyframes fruit1{
+    from{}
+    to{
+        transform: translate(-1400px);
+    }
+}
+
+.food2{
+    animation-name: fruit2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes fruit2{
+    from{}
+    to{
+        transform: translate(-1400px);
+    }
+}
+
+.food3{
+    animation-name: fruit3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+
+}
+
+@keyframes fruit3{
+    from{}
+    to{
+        transform: translate(-1400px);
+    }
+}
+
+.food4{
+    animation-name: fruit4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+
+}
+
+@keyframes fruit4{
+    from{}
+    to{
+        transform: translate(-1400px);
+    }
+}
